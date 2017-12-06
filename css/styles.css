@@ -150,9 +150,10 @@ body{
 }
 
 /*MEDIAQUERIES*/
-@media (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
+
 * {
-  font: 16px;
+  font-size: 16px;
 }
 .main {
     display: flex;
@@ -188,5 +189,47 @@ body{
    right: 20px;
    top: 20px;
  }
+}
 
+@media (max-width: 600px) {
+* {
+    font-size: 16px;
+  }
+body{
+    background-position: 100px 350px;
+    }
+.main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+.game {
+    height: auto;
+    padding-bottom: 100px;
+  }
+.historic {
+    height: auto;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+   }
+.gameBoard{
+    width: 100%;
+    max-width: 450px;
+    padding: 0 20px;
+    box-sizing: border-box;
+   }
+.title {
+    font-size: 25px;
+  }
+.titleHistoric {
+    font-size: 20px;
+  }
+.numberCounter {
+    font-size: 65px;
+  }
+  .counter{
+    right: 20px;
+    top: 20px;
+  }
 }
