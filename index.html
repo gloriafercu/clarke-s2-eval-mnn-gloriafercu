@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Adivina el número</title>
+</head>
+<body>
+  <main class="main">
+    <section class="game">
+      <h1 class="title">Adivina el número</h1>
+      <div class="gameBoard">
+        <div class="numberTry">
+          <div class="number">
+            <label for="number">Introduce aquí tu número</label>
+            <input type="text" id="number" name="number">
+          </div>
+          <input type="button" id="try" class="buttonTry" name="try" value="Prueba">
+        </div>
+        <div class="saveName">
+          <div class="name">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre">
+          </div>
+          <input type="button" id="save" class="buttonSave" name="save" value="Guardar">
+        </div>
+        <div class="clue">
+          <span class="textClue">¡PISTA!</span>
+        </div>
+      </div>
+      <div class="counter">
+        <span class="numberCounter">0</span>
+      </div>
+    </section>
+    <aside class="historic">
+      <h2 class="titleHistoric">Histórico</h2>
+      <ul class="record">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </aside>
+  </main>
+  <script type="text/javascript" src="js/main.js">
+  </script>
+</body>
+</html>
