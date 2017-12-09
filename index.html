@@ -15,12 +15,12 @@
       <div class="gameBoard">
         <div class="numberTry">
           <div class="number">
-            <label for="number">Introduce aquí tu número</label>
-            <input type="text" id="number" name="number">
+            <label for="number">Introduce aquí un número del 0 al 100</label>
+            <input type="number" id="number" name="number" min=0 max=100>
           </div>
           <input type="button" id="try" class="buttonTry" name="try" value="Prueba">
         </div>
-        <div class="saveName">
+        <div class="saveName hidden">
           <div class="name">
             <label for="name">Nombre</label>
             <input type="text" id="name" name="name" placeholder="Nombre">
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="counter">
-        <span class="numberCounter">0</span>
+        <span class="counterNumber">0</span>
       </div>
     </section>
     <aside class="historic">

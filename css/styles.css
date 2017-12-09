@@ -38,7 +38,7 @@ body{
 .numberTry {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   align-items: center;
 }
 .number {
@@ -72,6 +72,10 @@ body{
   display: flex;
   margin-bottom: 20px;
 }
+.hidden {
+  display: none;
+}
+
 .name {
   display: flex;
   flex-direction: column;
@@ -98,25 +102,28 @@ body{
 }
 /*PISTA*/
 .clue {
-  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -56%);
   height: 100px;
-  justify-content: center;
-  align-items: center;
+  width: 450px;
+  line-height: 80px;
+  text-align: center;
   background-color: white;
   border-radius: 5px;
-  box-sizing: border-box;
   padding: 10px;
 }
 .textClue {
   color: #11890D;
   font-weight: bold;
+
 }
 .italic {
   font-style: italic;
   color: #11890D;
 }
-
-
 
 /*CONTADOR*/
 .counter {
@@ -124,7 +131,7 @@ body{
   right: 50px;
   top: 40px;
 }
-.numberCounter {
+.counterNumber {
   font-size: 80px;
   color: #2fef28;
 }
@@ -182,7 +189,7 @@ body{
  .titleHistoric {
    font-size: 20px;
  }
-.numberCounter {
+.counterNumber {
    font-size: 65px;
  }
 .counter{
@@ -224,10 +231,10 @@ body{
 .titleHistoric {
     font-size: 20px;
   }
-.numberCounter {
-    font-size: 65px;
+.counterNumber{
+    font-size: 60px;
   }
-  .counter{
+.counter{
     right: 20px;
     top: 20px;
   }
