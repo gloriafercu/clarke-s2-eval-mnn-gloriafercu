@@ -130,13 +130,10 @@ body {
 }
 
 .textClue {
-  color: #11890D;
+  color: blue;
   font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
-  color: #11890D;
+  text-align: center;
+  line-height: 1.5;
 }
 
 /*CONTADOR*/
