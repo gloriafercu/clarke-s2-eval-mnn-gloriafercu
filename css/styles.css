@@ -217,9 +217,11 @@ body {
   .main {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
   .game {
     height: auto;
+    margin: 0 0 30px;
   }
   .historic {
     height: auto;
@@ -248,5 +250,6 @@ body {
   .buttonSave {
     font-size: 14px;
   }
+
 
 }
