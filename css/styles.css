@@ -5,7 +5,8 @@
   font-size: 20px;
   color: white;
 }
-body{
+
+body {
   background-image: url('../image/dado.jpg');
   background-repeat: no-repeat;
   background-position: -120px 90px;
@@ -13,20 +14,20 @@ body{
   background-size: contain;
   height: 100vh;
 }
+
 /*JUEGO*/
+
 .main {
   display: flex;
   height: 100vh;
-
 }
+
 .title {
   font-size: 38px;
   line-height: 38px;
   margin: 40px 0;
 }
-.gameBoard{
-  width: 450px;
-}
+
 .game {
   position: relative;
   display: flex;
@@ -34,23 +35,31 @@ body{
   flex-grow: 3;
   align-items: center;
 }
+
+.gameBoard {
+  width: 450px;
+}
+
 /*NÚMERO*/
+
 .numberTry {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   align-items: center;
 }
+
 .number {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-
 }
+
 .number label {
   margin-bottom: 15px;
 }
+
 .number input {
   color: black;
   font-size: 16px;
@@ -59,21 +68,25 @@ body{
   text-align: center;
   width: 40%;
 }
+
 .buttonTry {
   width: 150px;
   height: 40px;
   position: relative;
   background-color: #700A0A;
-  font-size: 18px;
+  font-size: 16px;
   border: 0;
 }
+
 /*NOMBRE*/
+
 .saveName {
   display: flex;
   margin-bottom: 20px;
 }
-.hidden {
-  display: none;
+
+.opacityZero {
+  opacity: 0;
 }
 
 .name {
@@ -82,60 +95,65 @@ body{
   margin-right: 15px;
   width: 70%;
 }
+
 .name label {
   display: none;
 }
+
 .name input {
   color: black;
   font-size: 16px;
   border-radius: 5px;
   padding: 8px;
-  margin-bottom: 15px;
 }
+
 .buttonSave {
   width: 30%;
   height: 40px;
   position: relative;
   background-color: #700A0A;
-  font-size: 18px;
-  border:0;
+  font-size: 16px;
+  border: 0;
 }
+
 /*PISTA*/
+
 .clue {
-  position: absolute;
+  display: flex;
   box-sizing: border-box;
-  top: 56%;
-  left: 50%;
-  transform: translate(-50%, -56%);
-  height: 100px;
-  width: 450px;
-  line-height: 80px;
-  text-align: center;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
 }
+
 .textClue {
   color: #11890D;
   font-weight: bold;
-
 }
+
 .italic {
   font-style: italic;
   color: #11890D;
 }
 
 /*CONTADOR*/
+
 .counter {
   position: absolute;
   right: 50px;
   top: 40px;
 }
+
 .counterNumber {
   font-size: 80px;
   color: #2fef28;
 }
+
 /*HISTÓRICO*/
+
 .historic {
   display: flex;
   flex-direction: column;
@@ -143,99 +161,92 @@ body{
   background-color: rgba(0, 102, 255, 0.5);
   height: 100vh;
 }
+
 .titleHistoric {
   font-size: 28px;
   line-height: 38px;
   align-self: center;
   margin: 40px 0;
 }
+
 .record {
-  padding-left:60px;
+  padding-left: 60px;
 }
+
 .record li {
   padding-bottom: 10px;
 }
 
 /*MEDIAQUERIES*/
-@media (min-width: 600px) and (max-width: 900px) {
 
-* {
-  font-size: 16px;
-}
-.main {
+@media (min-width: 600px) and (max-width: 900px) {
+  * {
+    font-size: 16px;
+  }
+  .main {
     display: flex;
     flex-direction: column;
+  }
+  .game {
     height: auto;
   }
-.game {
-   height: auto;
-   padding-bottom: 75px;
- }
-.historic {
-   height: auto;
-   width: 100%;
-   padding: 0 20px 100px;
-   box-sizing: border-box;
- }
-.gameBoard{
-   width: 100%;
-   max-width: 450px;
-   padding: 0 20px;
-   box-sizing: border-box;
- }
-.title {
-   font-size: 25px;
- }
- .titleHistoric {
-   font-size: 20px;
- }
-.counterNumber {
-   font-size: 65px;
- }
-.counter{
-   right: 20px;
-   top: 20px;
- }
+  .historic {
+    height: auto;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .titleHistoric {
+    font-size: 22px;
+  }
+  .counterNumber {
+    font-size: 65px;
+  }
+  .number input,
+  .name input,
+  .buttonTry,
+  .buttonSave {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 600px) {
-* {
+  * {
     font-size: 16px;
   }
-body{
-    background-position: -50px 0px;
-    }
-.main {
+  .main {
     display: flex;
     flex-direction: column;
+  }
+  .game {
     height: auto;
   }
-.game {
+  .historic {
     height: auto;
-    padding-bottom: 75px;
   }
-.historic {
-    width: 100%;
-    padding: 0 20px 100px;
-    box-sizing: border-box;
-   }
-.gameBoard{
-    width: 100%;
-    max-width: 450px;
-    padding: 0 20px;
-    box-sizing: border-box;
-   }
-.title {
-    font-size: 25px;
+  .title {
+    font-size: 26px;
   }
-.titleHistoric {
+  .titleHistoric {
     font-size: 20px;
   }
-.counterNumber{
-    font-size: 60px;
+  .gameBoard {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
   }
-.counter{
-    right: 20px;
+  .counterNumber {
+    font-size: 50px;
+  }
+  .counter {
     top: 20px;
+    right: 20px;
   }
+  .number input,
+  .name input,
+  .buttonTry,
+  .buttonSave {
+    font-size: 14px;
+  }
+
 }
