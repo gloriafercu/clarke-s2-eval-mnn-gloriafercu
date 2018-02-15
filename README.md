@@ -8,10 +8,10 @@ El ejercicio consiste en desarrollar una página web con un juego de "Adivinar e
 * Cuando el jugador escriba su nombre y pulse en guardar, almacenaremos el nombre del jugador y el número de intentos en una estructura de datos; recomendamos usar un objeto para almacenar la información de cada elemento del histórico (nombre e intentos).
 * Una vez guardado en el histórico, automáticamente la sección de histórico se repinta para mostrar los nuevos datos
 * Después de lo anterior, también automáticamente, se prepara el juego para una nueva partida
-1. se oculta la sección para introducir el nombre
-2. se genera un nuevo número aleatorio
-3. se pone el contador de intentos a 0
-4. se limpia el campo de feedback
-5. se limpian los inputs
-6. podremos jugar varias partidas y ver cómo se genera la información de históricoPero 
-7. esta información se perderá al recargar la página
+    1. se oculta la sección para introducir el nombre
+    2. se genera un nuevo número aleatorio
+    3. se pone el contador de intentos a 0
+    4. se limpia el campo de feedback
+    5. se limpian los inputs
+    6. podremos jugar varias partidas y ver cómo se genera la información de históricoPero 
+    7. esta información se perderá al recargar la página
